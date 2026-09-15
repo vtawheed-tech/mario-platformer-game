@@ -1,2 +1,3 @@
-# mario-platformer-game
-A 2D Mario-style platformer game built with Python and Pygame
+# Moonlit Tales
+
+An interactive editorial book experience with animated page turns. Open `index.html` in a modern browser to read it.

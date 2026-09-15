@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moonlit Tales — A book in motion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Moonlit Tales home">moonlit <span>tales</span></a>
+        <p>an illustrated journal of little wonders</p>
+        <button class="sound-button" type="button" aria-label="Toggle page sound" aria-pressed="false"><span class="sound-icon">⌁</span> sound off</button>
+      </header>
+
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Volume 07 · September 2024</p>
+          <h1>Turn the page.<br /><em>Stay awhile.</em></h1>
+          <p class="intro">A small collection of slow stories for days that ask you to look a little closer.</p>
+          <button class="read-button" type="button">Begin reading <span>↓</span></button>
+        </div>
+
+        <div class="book-stage" aria-label="An interactive book. Use the arrow buttons or click a page corner to turn pages.">
+          <div class="book-shadow"></div>
+          <div class="book" id="book">
+            <div class="cover back-cover"></div>
+            <div class="spread page-one" data-page="1">
+              <article class="page left-page title-page">
+                <p class="kicker">Moonlit tales presents</p>
+                <div class="moon"><span></span></div>
+                <h2>The<br />quiet<br /><em>hours</em></h2>
+                <p class="byline">Words &amp; photographs by Eliza Marlow</p>
+                <p class="page-number">01</p>
+              </article>
+              <article class="page right-page opener-page">
+                <div class="photo photo-window"><div class="window-glow"></div><span class="moon-dot"></span><span class="hill hill-one"></span><span class="hill hill-two"></span></div>
+                <p class="caption">I. The blue hour</p>
+                <h3>Some evenings<br />arrive <em>softly.</em></h3>
+                <p>There is a small moment, just after the last bird settles, when the whole world seems to inhale.</p>
+                <p class="page-number">02</p>
+              </article>
+            </div>
+            <div class="spread page-two" data-page="2">
+              <article class="page left-page notes-page">
+                <p class="caption">II. A field guide to dusk</p>
+                <h3>Three things<br />to carry home.</h3>
+                <ol>
+                  <li><span>01</span> The coolness from a shaded path.</li>
+                  <li><span>02</span> A pocketful of fading light.</li>
+                  <li><span>03</span> The sound of someone calling you in.</li>
+                </ol>
+                <p class="page-number">03</p>
+              </article>
+              <article class="page right-page field-page">
+                <div class="photo photo-field"><span class="sun"></span><span class="grass grass-a"></span><span class="grass grass-b"></span><span class="grass grass-c"></span></div>
+                <blockquote>“The earth has music for those who listen.”</blockquote>
+                <p class="page-number">04</p>
+              </article>
+            </div>
+            <div class="spread page-three" data-page="3">
+              <article class="page left-page closing-page">
+                <p class="caption">III. Nightfall</p>
+                <h3>Keep a little<br /><em>light</em> for later.</h3>
+                <p>Tomorrow will come in its own good time. Until then, let the quiet gather around you.</p>
+                <div class="stars">✦ &nbsp;·&nbsp; ✦ &nbsp;·&nbsp; ✦</div>
+                <p class="page-number">05</p>
+              </article>
+              <article class="page right-page end-page">
+                <div class="moon large-moon"><span></span></div>
+                <p class="end-note">Thank you for reading.</p>
+                <p class="page-number">06</p>
+              </article>
+            </div>
+            <div class="cover front-cover"><span>Moonlit<br /><em>Tales</em></span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Book controls">
+        <button class="round-button previous" type="button" aria-label="Previous spread">←</button>
+        <div class="progress"><span id="spread-label">01 / 03</span><div class="progress-track"><i id="progress-fill"></i></div></div>
+        <button class="round-button next" type="button" aria-label="Next spread">→</button>
+      </section>
+    </main>
+    <aside class="corner-note">click a page, or use the arrows</aside>
+    <script src="script.js"></script>
+  </body>
+</html>
