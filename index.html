@@ -22,10 +22,11 @@
           <p class="eyebrow">Volume 07 · September 2024</p>
           <h1>Turn the page.<br /><em>Stay awhile.</em></h1>
           <p class="intro">A small collection of slow stories for days that ask you to look a little closer.</p>
-          <button class="read-button" type="button">Begin reading <span>↓</span></button>
+          <button class="read-button" type="button">Watch the page turn <span>↓</span></button>
         </div>
 
         <div class="book-stage" aria-label="An interactive book. Use the arrow buttons or click a page corner to turn pages.">
+          <p class="animation-status" aria-live="polite"><span></span> page-turn preview</p>
           <div class="book-shadow"></div>
           <div class="book" id="book">
             <div class="cover back-cover"></div>
@@ -85,6 +86,7 @@
         <button class="round-button previous" type="button" aria-label="Previous spread">←</button>
         <div class="progress"><span id="spread-label">01 / 03</span><div class="progress-track"><i id="progress-fill"></i></div></div>
         <button class="round-button next" type="button" aria-label="Next spread">→</button>
+        <button class="pause-button" type="button" aria-pressed="false">pause preview</button>
       </section>
     </main>
     <aside class="corner-note">click a page, or use the arrows</aside>
