@@ -1,5 +1,4 @@
 images/
-*.mp4
 *.mp3
 *.ogg
 __pycache__/
